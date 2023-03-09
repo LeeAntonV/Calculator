@@ -46,8 +46,7 @@ class Calculator:
         for key in self.operations:
             self.window.bind(key, lambda event, operator=key: self.append_operator(operator))
         
-    def plus_minus(self):
-        pass
+        
     def create_plus_minus_button(self):
         button =  tk.Button(self.buttons_frame,text="+/-",bg="white",fg="#25265E",font=("Arial",10),borderwidth=0,command=self.plus_minus)
         button.grid(row=4,column=1,sticky=tk.NSEW)
